@@ -1,0 +1,303 @@
+/* MAIN */
+
+:root {
+    --main-color-1:white;
+    --main-color-2:black;
+    --main-color-3:rgb(238, 234, 232);
+    --main-color-4:#d2483dff;
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 10%;
+}
+
+.container {
+    max-width: 1600px;
+    margin:0;
+    background-color: var(--main-color-3);
+    padding-bottom: 45px!important;
+}
+
+.nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 80px 20px 80px!important;
+}
+
+.navItem {
+    text-decoration: none;
+    color: var(--main-color-2);
+    font-family: "Bebas Neue", serif;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.activePage {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color-4);
+}
+
+.navLogo {
+    width: 15%;
+}
+
+.h1 {
+    font-family:"Bebas Neue", serif;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.h2 {
+    font-family:"Bebas Neue", serif;
+    font-weight: normal;
+    margin: 0px;
+    text-decoration: underline;
+    text-decoration-color: var(--main-color-4);
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.txt {
+    margin: 5px 0;
+    width: fit-content;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--main-color-2);
+    color:var(--main-color-1);
+    padding: 10px 40px;
+    font-family:"Bebas Neue", serif;
+}
+
+.paddingTop {
+    padding-top: 20px;
+}
+
+/* COMMON SECTION*/
+
+.commande {
+    background-color: var(--main-color-4);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.txtComm {
+    margin: 0;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.txtC {
+    padding: 0 60px;
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--main-color-2);
+    margin: 0;
+    padding: 40px 20px;
+    text-align: end;
+}
+
+.icon {
+    width: 30px;
+    padding: 20px;
+}
+
+/*ACCUEIL*/
+
+.headerA {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.flexA {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logo {
+    width: 20%;
+}
+
+.adresses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adresse {
+    width:calc(65%/3);
+    padding: 20px 50px;
+}
+
+.facade {
+    width: 100%;
+}
+
+.store {
+    font-weight: bold;
+    margin: 0;
+    width: fit-content;
+    padding: 0;
+}
+
+.txtAdresse {
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.txtA {
+    padding: 0 50px;
+    text-align: justify;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo {
+    aspect-ratio: 1/1;
+    width: 20%;
+    padding: 20px;
+}
+
+/* MENU */
+
+.color4 {
+    color: var(--main-color-4);
+}
+
+.titreM {
+    font-size:40px;
+}
+
+.menu {
+    padding: 20px 80px;
+}
+
+.logoM {
+    width: 60px;
+    padding: 20px;
+}
+
+.carte {
+    text-align: center;
+    background-color: var(--main-color-1);
+    padding: 20px;
+}
+
+/* CONTACT */
+
+.contactC {
+    display: flex;
+}
+
+.titreC {
+    font-size: 50px;
+}
+
+.contactItem {
+    width: calc(100%/2);
+}
+
+.contactGauche {
+    padding: 40px 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adresseC {
+    margin: 20px 0;
+    padding-left: 5px;
+}
+
+.adresseC p {
+    padding: 0;
+    margin: 0;
+}
+
+.activeAdresse {
+    border-left: solid var(--main-color-4);
+}
+
+@media screen and (min-width:576px) and (max-width:1200px) {
+
+    .nav {
+        padding: 0!important;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .adresse {
+        width:calc(50%/2);
+        padding: 20px 50px;
+    }
+
+    .photo {
+        aspect-ratio: 1/1;
+        width: 20%;
+        padding: 20px;
+    }
+
+    .contactC {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactItem {
+        width: 100%;
+    }
+
+    .container {
+        padding-bottom: 10px!important ;
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+
+    .nav {
+        padding: 0!important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .txt {
+        font-size: 12px;
+    }
+
+    .container {
+        padding-bottom: 10px!important ;
+    }
+
+    .contactC {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactItem {
+        width: 100%;
+    }
+
+    body {
+        font-size: 12px;
+    }
+}
