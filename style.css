@@ -35,6 +35,32 @@ body {
     padding: 20px;
 }
 
+.nav a {
+    position: relative;
+    color: var(--main-color-2);
+    transition: color 0.3s ease;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    bottom: 24px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color-4);
+    transition: width 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--main-color-2);
+}
+
+.nav a:hover::after {
+    width: 70%;
+}
+
+
 .activePage {
     text-decoration: underline;
     text-decoration-color: var(--main-color-4);
@@ -54,6 +80,7 @@ body {
     font-family:"Bebas Neue", serif;
     font-weight: normal;
     margin: 0px;
+    padding-top:5px;
     text-decoration: underline;
     text-decoration-color: var(--main-color-4);
     text-align: center;
