@@ -71,9 +71,17 @@ body {
 .btn {
     text-decoration: none;
     background-color: var(--main-color-2);
+    border: solid 2px var(--main-color-2);
     color:var(--main-color-1);
     padding: 10px 40px;
     font-family:"Bebas Neue", serif;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.btn:hover {
+    transition: background-color 0.3s ease, border 0.3s ease;
+    background-color: var(--main-color-4);
+    border: solid 2px var(--main-color-2);
 }
 
 .paddingTop {
@@ -121,6 +129,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 0 30px;
+    background-color: var(--main-color-4);
 }
 
 .animation {
