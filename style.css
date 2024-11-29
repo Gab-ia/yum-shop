@@ -123,6 +123,10 @@ body {
     padding: 0 30px;
 }
 
+.animation {
+    width: 40%;
+}
+
 .flexA {
     display: flex;
     flex-direction: column;
